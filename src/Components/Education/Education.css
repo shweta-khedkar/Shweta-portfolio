@@ -1,0 +1,92 @@
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 70px 5% ;
+}
+
+.education-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(270deg, #DF8908 50.41%, #B415FF 90.25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.education-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.05); /* Glass effect background */
+  backdrop-filter: blur(12px); /* Frosted glass */
+  border: 2px solid rgba(255, 255, 255, 0.1); /* Default subtle border */
+  border-radius: 16px;
+  padding: 30px 25px;
+  width: 300px; /* Wider cards */
+  min-height: 220px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.education-card:hover {
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.4);
+  background-clip: padding-box;
+  border-image: linear-gradient(264deg, #DF8908, #B415FF);
+  border-image-slice: 1; /* Apply gradient to border */
+}
+
+.education-card h2 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.education-card .institution {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #e0e0e0;
+  margin-bottom: 8px;
+}
+
+.education-card .percentage {
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1200px) {
+  .education-cards {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .education-card {
+    width: 45%; /* Allow two cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .education-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .education-card {
+    width: 90%; /* Stack cards on small screens */
+  }
+  .education-title {
+    font-size: 2rem;
+  }
+}
