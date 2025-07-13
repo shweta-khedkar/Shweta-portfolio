@@ -1,20 +1,21 @@
 import React from "react";
 import "./Hero.css";
 import profile_img from "../../assets/mypic.jpg"; // Ensure the path is correct
+import resume from "../../assets/Shweta_Khedkar_Resume.pdf"; // ✅ Import your resume
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
   // Function to download resume
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/assets/Shweta_Khedkar_Resume.pdf"; // Path to resume in public folder
+    link.href = resume; // ✅ Use imported resume
     link.download = "Shweta_Khedkar_Resume.pdf";
     link.click();
   };
 
   return (
     <div id="home" className="hero">
-      <img src={profile_img} alt="" className="profile-img" />
+      <img src={profile_img} alt="Shweta Khedkar" className="profile-img" />
       <h1>
         <span> Hey..! I'm Shweta Khedkar, </span>
         Fullstack Developer + Cyber Security Student based in Pune, Maharashtra,
