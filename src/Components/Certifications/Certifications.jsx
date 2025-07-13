@@ -1,7 +1,7 @@
 import React from "react";
 import "./Certifications.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
-import cert1_img from "../../assets/Cert1.png"; // Thumbnail for certificate
+import cert1_img from "../../assets/cert1.png"; // Thumbnail for certificate
 import cert2_img from "../../assets/Cert3.png";
 
 const Certifications = () => {
