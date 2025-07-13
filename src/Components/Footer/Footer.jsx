@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Footer.css";
 import user_icon from "../../assets/user_icon.svg";
+import resume from "../../assets/Shweta_Khedkar_Resume.pdf"; // ✅ import your resume
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -46,7 +47,7 @@ const Footer = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/assets/Shweta_Khedkar_Resume.pdf"; // path in public folder
+    link.href = resume; // ✅ use imported resume
     link.download = "Shweta_Khedkar_Resume.pdf";
     link.click();
   };
