@@ -13,6 +13,7 @@ const About = () => {
     { name: "Networking", level: 70 },
     { name: "Cyber Security Measures", level: 75 },
     { name: "Databases: MongoDB + SQL", level: 80 },
+    { name: "Version Control: Git/Github", level: 90 },
   ];
 
   return (
